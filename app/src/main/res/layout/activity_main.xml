@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paezand.connect3.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_container_new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#fffaafff"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/winner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/startAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Play Again"
+                android:onClick="playAgain"/>
+
+        </LinearLayout>
+
+
+        <GridLayout
+            android:id="@+id/board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/board"
+            android:columnCount="3"
+            android:rowCount="3">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:onClick="dropIn"
+                android:tag="0"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:onClick="dropIn"
+                android:tag="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:onClick="dropIn"
+                android:tag="2"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="3"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="4"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="5"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="6"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="7"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="dropIn"
+                android:tag="8"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="32dp" />
+        </GridLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
